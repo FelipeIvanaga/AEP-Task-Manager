@@ -20,6 +20,13 @@ public class Tarefa {
     private String responsavel;
     private float horasEstimadas;
 
+    public enum Status {
+        NAO_INICIADA,
+        EMP_PROGRESSO,
+        TERMINADA,
+        BLOQUEADA;
+    }
+
 
     public int getId() {
         return id;
