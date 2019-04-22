@@ -5,7 +5,6 @@ email: felipe.alves.ivanaga@gmail.com
 
 package br.com.ivanaga.TaskApp;
 
-import ch.qos.logback.core.status.Status;
 
 import javax.persistence.*;
 
@@ -13,7 +12,7 @@ import javax.persistence.*;
 public class Tarefa {
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String descricao;
     private String dataCriacao;
     private Status situacao;
@@ -28,11 +27,11 @@ public class Tarefa {
     }
 
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
